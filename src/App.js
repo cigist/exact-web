@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import logo from './img/img-logo.png';
 import './App.css';
 import Menu from './pages/menu/menu.js';
 
@@ -10,10 +10,9 @@ class App extends Component {
         <Menu />
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
         </header>
         <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
+         <input type="text" placeholder="Input nomer kiriman"/>
         </p>
       </div>
     );

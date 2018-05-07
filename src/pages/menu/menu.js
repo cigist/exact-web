@@ -1,4 +1,5 @@
 import React from 'react';
+import './menu.css';
 import {
     Collapse,
     Navbar,
@@ -30,7 +31,7 @@ export default class Menu extends React.Component {
     render() {
         return (
             <div>
-                <Navbar color="light" light expand="md">
+                <Navbar className="nav-cutome" light expand="md">
                     <NavbarBrand href="/">exact</NavbarBrand>
                     <NavbarToggler onClick={this.toggle} />
                     <Collapse isOpen={this.state.isOpen} navbar>
@@ -39,7 +40,7 @@ export default class Menu extends React.Component {
                                 <NavLink href="/components/">Components</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink href="https://github.com/reactstrap/reactstrap">GitHub</NavLink>
+                                <NavLink href="https://github.com/reactstrap/reactstrap">Minta Penawaran</NavLink>
                             </NavItem>
                             <UncontrolledDropdown nav inNavbar>
                                 <DropdownToggle nav caret>
